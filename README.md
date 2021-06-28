@@ -25,6 +25,8 @@ For this feature, displaying data from the 'button-triggered' API call on the pa
 
 The following block of Javascript code is ran everytime the page is loaded/refreshed: 
 
+![javascript_code ](https://user-images.githubusercontent.com/85216187/123647070-1e840180-d86b-11eb-9f7c-1d72cf0b6dcc.jpg)
+
 If the page is being loaded for the first time, the current date will be assigned to the API call. If the page is not being loaded for the first time, then the date value which is stored in the session will be moved either forwards or backwards (depending on which button has been clicked) and then assigned to the API call
 
 ### 2: Hiding the API key using environment variables (still a work in progress)
