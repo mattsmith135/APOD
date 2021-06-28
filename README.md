@@ -20,7 +20,7 @@ If you want to find out more about the APOD API, [click here](https://api.nasa.g
 
 
 ## Challenges I faced during development   
-### Implementing APOD navigation
+### 1: Implementing APOD navigation
 
 Early in the project, I decided to implement a feature that allows users to navigate between astronomy picture of the days with previous ('<') and next ('>') buttons. This feature operates by refreshing the page and changing the 'date' field of the API call every time the user presses a navigation button. The relevant data from this API call is then displayed on the page. The 'date' field for the API call is dependent on which button is clicked. If the 'previous' button is clicked, the API call's 'date' field will be equal to the date of the preceding day. If the 'next' button is clicked, the 'date' field will be equal to the date of the following day (if it exists).
 
@@ -30,7 +30,7 @@ The following block of Javascript code is ran everytime the page is loaded/refre
 
 If the page is being loaded for the first time, the current date will be assigned to the API call. If the page is not being loaded for the first time, then the date value which is stored in the session will be moved either forwards or backwards (depending on which button has been clicked) and then assigned to the API call
 
-### Hiding the API key using environment variables (still a work in progress)
+### 2: Hiding the API key using environment variables (still a work in progress)
 
 Hiding the API key is a necessary step in all projects. If someone gains control of your API key they could exceed rate limits, violate an APIs terms of service and abuse your access to a resource. Usually, we would store an API key in a .env file and then access it externally by referring to the .env file. This is commonly done in Node.js by using the [dotenv package](https://www.npmjs.com/package/dotenv). However, accessing an API key hidden away in a .env file is very difficult without a backend. This is because many of the functions required to complete the task are not natively supported in the web browser (ie. `require` is specific to Node.js). Unfortunately, my APOD application lacks a backend and as such, I am having some difficulty hiding my API key. I am currently investigating alternatives such as the javascript module loader [require.js](https://requirejs.org/). Worst case scenario, I'll just need to create a backend. 
  
