@@ -16,9 +16,6 @@ This request will return all the data for a specific date including the image ti
 
 If you want to find out more about the APOD API, [click here](https://api.nasa.gov/) and browse APIs until you find 'APOD'. 
 
-## Project installation
-
-
 ## Challenges I faced during development   
 ### 1: Implementing APOD navigation
 
