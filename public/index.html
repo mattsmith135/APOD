@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8" /> 
+    <meta name="title" description="Astronomy picture of the day (APOD) website" /> 
+    <meta author="Matthew Smith" /> 
+    <title>APOD</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/sketch.js"></script>
+    <!-- the following links are used to load google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <ul class="navbar_links"> 
+                <li><a href="index.html" id="logo">apod.</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="landing-container">
+    <div id="image-title-container">
+        <h1 id="image-title"></h1>
+    </div>
+
+    <div id="image-container">
+        <!-- image element where APOD (astronomy picture of the day) content will be displayed -->
+        <!-- the src attribute of this image tag is modified via javascript -->
+        <img id="apod" width="600" height="600"> 
+
+        <!-- an iframe tag which will only be filled if the APOD is in video format -->
+        <!-- frameBorder="0" eliminates the white border around the iframe -->
+        <iframe id="apod-video" frameBorder="0"></iframe>
+    </div>
+
+    <div id="explanation-container">
+        <p id="explanation"></p>
+    </div>
+
+    <div class="flex-container">
+        <button id="previous-button" class="previous">&lt;</button>
+
+        <p id="apod-date"></p>
+
+        <button id="next-button" class="next">></button>
+    </div>
+</div>
+
+</body>
+</html>

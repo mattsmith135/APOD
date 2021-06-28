@@ -1,0 +1,111 @@
+html, body {
+    background: #121111;
+    color: white; 
+    font-family: "Noto Sans KR", "Helvetica", "Times New Roman"; 
+    font-size: 1.075em; 
+    letter-spacing: 0.075em; 
+    margin: 0; /* this line of code got rid of spaces on the side of navbar */
+}
+
+#logo {
+    text-decoration: none;
+    color: black;
+    font-family: "Do Hyeon", "Helvetica";
+    font-size: 2.5em; 
+    letter-spacing: 0.1em;  
+}
+
+header {
+    background: #e8eaea; /* tossing up between this and e8eaea */ 
+    text-align: center;
+}
+
+img {
+    width: 90%;/* setting image height and width properties to that it resizes responsively */ 
+    height: 90%; 
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;   
+}
+
+nav ul {
+    margin: 0; /* this line of code got rid of the space at the top of the navbar */
+    padding: 0;
+    padding-top: 2.5em; 
+    padding-bottom: 2.5em; 
+    list-style: none; 
+}
+
+/* the APOD navigation menu at the bottom of the page is stored in a flex container */
+.flex-container {
+    display:flex; 
+    justify-content: space-between;
+    text-align: center; 
+    margin-left: 4%;
+    margin-right: 4%; 
+}
+
+
+.previous {
+    background-color: #121111; 
+    color: white;  
+    font-size: 1.5em; 
+    border: none;
+}
+
+#apod-date {
+    margin-top: 2%; 
+}
+
+.next {
+    background-color: #121111; 
+    color: white;  
+    font-size: 1.5em; 
+    border: none; 
+}
+
+.previous:hover {
+    border-bottom: 3px white solid;
+}
+
+.next:hover {
+    border-bottom: 3px white solid; 
+}
+
+h1 {
+    font-family: "Do Hyeon";
+    letter-spacing: 0.125em; 
+}
+
+.landing-container {
+    margin: 3% 20% 3% 20%;  
+}
+
+#image-title-container {
+    text-align: center;
+}
+
+#image-container {
+    text-align: center; 
+    margin-top: 2%;
+    margin-bottom: 1%;   
+}
+
+#explanation-container {
+    margin-left: 5%; 
+    margin-right: 5%; 
+    line-height: 2em; 
+
+    border-bottom: 2px white solid; 
+
+    -webkit-column-count: 1; /* webkit is a web browser engine used by browsers such as Safari and Chrome */
+    -moz-column-count: 1; /* moz is for Mozilla Firefox */
+    column-count: 1;
+}
+
+iframe {
+    height: 600px; 
+    width: 900px; 
+}
