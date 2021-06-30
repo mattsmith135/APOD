@@ -26,7 +26,7 @@ if (session_date != null) {
     var timestamp = formatDate(date); // will return the current date in "YYYY-MM-DD" format  
 }
 
-const api_key = ""; // currently empty. See bottom of README.md
+const api_key = apiKey; // the API key is contained within apiKey.js
 const api_url = `https://api.nasa.gov/planetary/apod?api_key=${api_key}&date=${timestamp}`;
 
 async function main() {
