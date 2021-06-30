@@ -16,6 +16,19 @@ This request will return all the data for a specific date including the image ti
 
 If you want to find out more about the APOD API, [click here](https://api.nasa.gov/) and browse APIs until you find 'APOD'. 
 
+## Project Installation
+
+This program is only intended for local deployment. If you want to get this up and running on your own device, do the following:
+
+1. Download and unzip the ZIP file (which can be downloaded from Github)
+
+2. Visit the [NASA website](https://api.nasa.gov/) and follow the steps to generate an API key
+
+3. Within the scripts folder of the project, create a javascript file called apiKey.js. In apiKey.js, write: `var apiKey = your_API_key`
+
+4. Run index.html in a browser of your choice
+
+
 ## Challenges I faced during development   
 ### 1: Implementing APOD navigation
 
