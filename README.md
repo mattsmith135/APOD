@@ -18,7 +18,7 @@ If you want to find out more about the APOD API, [click here](https://api.nasa.g
 
 ## Project Installation
 
-This program is only intended for local deployment. If you want to get this up and running on your own device, do the following:
+This program is only intended for local deployment. If you want to get this application up and running on your own device, do the following:
 
 1. Download and unzip the ZIP file (which can be downloaded from Github)
 
